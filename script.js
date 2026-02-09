@@ -24,3 +24,16 @@ Ho bisogno di parametri?,
 Devo restituire un valore?,
 Se sì, di che tipo?
 */
+
+
+
+// Struttura
+
+// 1. Chiedere parola all'utente.
+
+// 2. Creare una funzione che:
+//    -riceva la parola;
+//    -la confronti con la stessa parola,ma al contrario (Una parola è palindroma se è uguale alla sua versione al contrario);
+//    -restituisce true se è palindroma,altrimenti false.
+
+// 3. Utlizzare la funzione e stampare il risultato.

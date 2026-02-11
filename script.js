@@ -37,3 +37,39 @@ Se sì, di che tipo?
 //    -restituisce true se è palindroma,altrimenti false.
 
 // 3. Utlizzare la funzione e stampare il risultato.
+
+
+
+// 1. Chiedere parola all'utente.
+
+const userWord = prompt("Inserire parola");
+
+// 2. Creare una funzione
+function wordPalindrome(userWord) {
+
+// Array per parola al contrario 
+const splitted_word = [];
+
+// Ciclo per invertire la parola
+for (let i = 0; i < userWord.length; i++) {
+  const letter = userWord[i];
+  splitted_word.unshift(letter);
+}
+
+// Trasformiamo l'array in stringa
+const reversedWord = splitted_word.join("");
+
+// Confronto parola
+  if (userWord === reversedWord) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+// 3. Utilizzare la funzione e stampare il risultato.
+if (wordPalindrome(userWord)) {
+  console.log("La parola è palindroma");
+} else {
+  console.log("La parola non è palindroma");
+}

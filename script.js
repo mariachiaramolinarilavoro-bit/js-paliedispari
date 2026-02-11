@@ -27,7 +27,7 @@ Se sì, di che tipo?
 
 
 
-// Struttura
+// Struttura Palidroma
 
 // 1. Chiedere parola all'utente.
 
@@ -36,7 +36,7 @@ Se sì, di che tipo?
 //    -la confronti con la stessa parola,ma al contrario (Una parola è palindroma se è uguale alla sua versione al contrario);
 //    -restituisce true se è palindroma,altrimenti false.
 
-// 3. Utlizzare la funzione e stampare il risultato.
+// 3. Utilizzare la funzione e stampare il risultato.
 
 
 
@@ -73,3 +73,19 @@ if (wordPalindrome(userWord)) {
 } else {
   console.log("La parola non è palindroma");
 }
+
+
+//Struttura Pari e Dispari
+
+
+//L'utente sceglie pari o dispari
+
+//L'utente inserisce un numero da 1 a 5
+
+//Generare un numero random da 1 a 5 per il computer
+
+//Sommiamo i due numeri
+
+//Controlliamo se la somma è pari o dispari
+
+//Dichiarare il vincitore

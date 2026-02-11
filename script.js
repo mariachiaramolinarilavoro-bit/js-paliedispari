@@ -77,15 +77,42 @@ if (wordPalindrome(userWord)) {
 
 //Struttura Pari e Dispari
 
+// Funzione per generare un numero casuale
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Funzione per sommare due numeri
+function sum(a, b) {
+  return a + b;
+}
+
+// Funzione per determinare se un numero è pari o dispari
+function evenOrOdd(number){
+  if(number % 2 === 0){
+    return 'pari';
+  }
+  return 'dispari';
+}
 
 //L'utente sceglie pari o dispari
+const user_choice = prompt("Pari o Dispari?");
 
 //L'utente inserisce un numero da 1 a 5
+const user_number = Number(prompt("Inserire numero da 1 a 5"));
 
 //Generare un numero random da 1 a 5 per il computer
+const pc_number = getRandomNumber(1, 5);
 
 //Sommiamo i due numeri
+const result = sum(user_number, pc_number);
+console.log(result, user_choice, user_number, pc_number);
 
 //Controlliamo se la somma è pari o dispari
+if(evenOrOdd(result) === user_choice.toLowerCase()){
 
 //Dichiarare il vincitore
+  console.log('You win!');
+} else {
+  console.log('Ops.. Computer win..');
+}
